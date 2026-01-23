@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>اعتماد</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>اعتماد | قراراتك بثقة</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     :root {
-      --bg-main: #0B0E14;
-      --text-main: #FFFFFF;
-      --text-secondary: #9CA3AF;
-      --accent: #7C5CFF; /* بدّلها إلى #2BFF88 لو تحب */
+      --bg-main: #0b0e14;
+      --text-main: #ffffff;
+      --text-secondary: #9ca3af;
+      --accent: #7c5cff;
       --border: #111827;
     }
 
@@ -20,7 +20,7 @@
 
     body {
       margin: 0;
-      font-family: "Inter", "IBM Plex Sans Arabic", Arial, sans-serif;
+      font-family: Tahoma, Arial, sans-serif;
       background: var(--bg-main);
       color: var(--text-main);
       line-height: 1.8;
@@ -67,7 +67,7 @@
 
     .accent {
       color: var(--accent);
-      font-weight: 600;
+      font-weight: bold;
     }
 
     .btn {
@@ -78,7 +78,7 @@
       color: #000;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: 600;
+      font-weight: bold;
       transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
@@ -91,17 +91,15 @@
       text-align: center;
       padding: 50px 20px;
       font-size: 14px;
-      color: #6B7280;
+      color: #6b7280;
       border-top: 1px solid var(--border);
     }
 
-    /* ===== Animations ===== */
-
+    /* Animations */
     .fade-up {
       opacity: 0;
       transform: translateY(18px);
-      transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-                  transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      transition: opacity 0.6s ease, transform 0.6s ease;
     }
 
     .fade-up.show {
@@ -109,107 +107,124 @@
       transform: translateY(0);
     }
 
-    .delay-1 { transition-delay: 0.1s; }
-    .delay-2 { transition-delay: 0.2s; }
-    .delay-3 { transition-delay: 0.3s; }
+    /* =====================
+       Mobile Optimization
+       ===================== */
+    @media (max-width: 768px) {
+      header {
+        font-size: 18px;
+        padding: 18px;
+      }
+
+      .container {
+        padding: 70px 18px;
+      }
+
+      section {
+        padding: 70px 18px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 1.4;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.9;
+      }
+
+      .btn {
+        padding: 12px 28px;
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<header>
-  اعتماد
-</header>
+<header>اعتماد</header>
 
-<!-- HERO -->
 <div class="container">
   <h1 class="fade-up show">
-    كثير من القرارات التجارية<br>
+    كثير من القرارات التجارية<br />
     تُتخذ بدون رؤية كافية <span class="accent">للسياق</span>
   </h1>
 
-  <p class="fade-up show delay-1">
-    المشكلة ليست في الأشخاص،<br>
+  <p class="fade-up show">
+    المشكلة ليست في الأشخاص،<br />
     بل في الأدوات التي لا ترى الصورة كاملة.
   </p>
 
-  <a href="#" class="btn fade-up show delay-2">
-    اعرف القرار الأفضل
-  </a>
+  <a href="#" class="btn fade-up show">اعرف القرار الأفضل</a>
 </div>
 
-<!-- المشكلة -->
 <section class="fade-up">
   <h2>القرار الجيد يحتاج أكثر من رقم.</h2>
   <p>
-    البيانات بدون تفسير تُربك.<br>
-    الحدس بدون دعم يُضلل.<br>
+    البيانات بدون تفسير تُربك.<br />
+    الحدس بدون دعم يُضلل.<br />
     والذكاء الاصطناعي بدون إشراف يخطئ.
   </p>
 </section>
 
-<!-- الحل -->
 <section class="fade-up">
   <h2>
-    نستخدم الذكاء الاصطناعي.<br>
+    نستخدم الذكاء الاصطناعي.<br />
     لكن لا نتركه يقرر وحده.
   </h2>
 
   <p>
-    اعتماد تحلل البيانات بذكاء،<br>
-    وتضيف مراجعة بشرية تضع الأرقام في سياقها،<br>
+    اعتماد تحلل البيانات بذكاء،<br />
+    وتضيف مراجعة بشرية تضع الأرقام في سياقها،<br />
     لتخرج بقرار مفهوم يمكن الوثوق به.
   </p>
 
-  <p style="margin-top:30px;">
-    لا تحليل بلا <span class="accent">تفسير</span>.<br>
+  <p style="margin-top:30px">
+    لا تحليل بلا <span class="accent">تفسير</span>.<br />
     ولا قرار بلا <span class="accent">مسؤولية</span>.
   </p>
 </section>
 
-<!-- كيف نعمل -->
 <section class="fade-up">
   <h2>كيف نعمل؟</h2>
-
   <p>
-    <span class="accent">1</span> سؤال واضح<br>
-    <span class="accent">2</span> تحليل ذكي<br>
-    <span class="accent">3</span> مراجعة بشرية<br>
+    <span class="accent">1</span> سؤال واضح<br />
+    <span class="accent">2</span> تحليل ذكي<br />
+    <span class="accent">3</span> مراجعة بشرية<br />
     <span class="accent">4</span> قرار مفهوم
   </p>
 </section>
 
-<!-- لمن هذا -->
 <section class="fade-up">
   <h2>اعتماد لمن يريد أن يفهم قراره.</h2>
-
   <p>
-    إذا كنت تبحث عن إجابات سريعة فقط،<br>
-    فقد لا تكون هذه الأداة مناسبة لك.
-    <br><br>
-    أما إن كنت تريد وضوحًا وثقة،<br>
+    إذا كنت تبحث عن إجابات سريعة فقط،<br />
+    فقد لا تكون هذه الأداة مناسبة لك.<br /><br />
+    أما إن كنت تريد وضوحًا وثقة،<br />
     فأنت في المكان الصحيح.
   </p>
 </section>
 
-<!-- CTA -->
 <section class="fade-up">
   <h2>
-    القرارات الواضحة<br>
+    القرارات الواضحة<br />
     تصنع فرقًا حقيقيًا.
   </h2>
 
-  <a href="#" class="btn">
-    سجّل اهتمامك
-  </a>
+  <a href="#" class="btn">سجّل اهتمامك</a>
 </section>
 
 <footer>
-  © 2026 اعتماد<br>
+  © 2026 اعتماد<br />
   اتخاذ القرار مسؤولية.
 </footer>
 
-<!-- JS: Scroll Reveal -->
 <script>
   const observer = new IntersectionObserver(
     entries => {
@@ -228,4 +243,4 @@
 </script>
 
 </body>
-  </html>
+                          </html>
